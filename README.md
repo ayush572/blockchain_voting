@@ -76,7 +76,7 @@ compiledCode.contracts[‘:Voting’].interface: interface of the contract (call
 > abiDefinition = JSON.parse(compiledCode.contracts[':Voting'].interface)
 > VotingContract = web3.eth.contract(abiDefinition)
 > byteCode = compiledCode.contracts[':Voting'].bytecode
->deployedContract = VotingContract.new(['Sanat','Aniket','Mandar','Akshay'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
+>deployedContract = VotingContract.new(['Candidate 1','Candidate 2','Candidate 3','Candidate 4'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
 > deployedContract.address
 > contractInstance = VotingContract.at(deployedContract.address)
 deployedContract.address. When you have to interact with your contract, you need this deployed address and abi definition we talked about earlier.
@@ -122,10 +122,7 @@ user interface and high security.
 
 ## Authors
 
-* **Sanat Taori**
-* **Akshay Motghare**
-* **Mandar Patil** 
-* **Aniket Narkhede**
+* **Ayush Daga**
 
 ## License
 
